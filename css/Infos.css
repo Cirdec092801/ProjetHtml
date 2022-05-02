@@ -1,0 +1,71 @@
+body{
+    background-color: #1B2E3C;
+}
+#logo {
+    height: 70px;
+    background-image: #1B2E3C;  
+}
+.logo a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: #B6FFCE;
+    font-weight: 500;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 0.07em 0.05em #B6FFCE;
+}
+
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 30%;
+    padding-right: 100px;
+    gap: 4;
+
+}
+.titre{
+    color: #ffffff;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+
+}
+.titre+p{
+    color: #ffffff;
+    font-weight: 400;
+    font-family: Montserrat;
+    font-size: 30px;
+}
+
+#scrollUp
+{
+position: fixed;
+bottom : 10px;
+right: -100px;
+opacity: 0.5;
+}
+button{
+    text-decoration: none;
+    color :#B6FFCE;
+    font-family: MontSerrat;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: medium;
+    border: 0.5px solid #F3E3E2;
+    padding: 10px 24px ;
+    border-radius: 25px;
+    background-color: #1B2E3C;
+    transition: background-color 0.9s, color 0.4s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #B6FFCE;
+    color: #4D0011;
+}

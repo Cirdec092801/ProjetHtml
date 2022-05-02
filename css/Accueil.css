@@ -1,0 +1,143 @@
+body{
+    background-color: #1B2E3C;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    
+}
+
+button{
+    text-decoration: none;
+    color :#B6FFCE;
+    font-family: MontSerrat;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: medium;
+    border: 0.5px solid #F3E3E2;
+    padding: 10px 24px ;
+    border-radius: 25px;
+    background-color: #1B2E3C;
+    transition: background-color 0.9s, color 0.4s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #B6FFCE;
+    color: #4D0011;
+}
+
+#back{
+    width: 400px;
+    height: 550px;
+    position: absolute;
+    left: 925px;
+    top: 125px;
+}
+#horloge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+#temps{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    color: #F3E3E2;
+}
+
+#temps .cercle{
+    position: relative;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+}
+
+#temps div{
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+#temps .cercle svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+
+#temps .cercle svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #0C0C1E;
+    stroke-width: 4;
+    transform: translate(5px,5px);
+}
+#temps .cercle svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+}
+.dots{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+
+}
+.dots::before{
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    background: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--clr),
+                0 0 20px var(--clr);
+}
+#temps div span{
+    position: absolute;
+    transform: translateX(-50%) translateY(-10px);
+    font-size: 0.5em;
+    font-weight: 400;
+    letter-spacing: 0.001em;
+    text-transform: uppercase;
+    margin-top: 30%;
+    font-family: MontSerrat;
+}
+#logo {
+    height: 70px;
+    background-color: #1B2E3C;
+    
+}
+.logo a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: #B6FFCE;
+    font-weight: 500;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 0.07em 0.05em #B6FFCE;
+}
+

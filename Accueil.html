@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css\Accueil.css" rel="stylesheet">
+	<script src="js/scripts.js"></script>
+	<title>Accueil</title>
+</head>
+<body>
+	<!--Bouttons  -->
+
+	<div class="container">
+		<div>
+			<a href="Infos.html"><button>Infos</button></a>
+		</div>
+		<div>
+			<a href="Quizz.html"><button onclick="message()">Quizz</button></a>
+		</div>
+		<div>
+			<a href="Galerie.html"><button>Galerie</button></a>
+		</div>
+	</div>
+
+	<!-- Background et logo -->
+	<div class="logo">
+		<a href="Accueil.html">
+			<img src="img/Home-Logo-PNG-Clipart-Background.png" alt="Site Personnel" id="logo">
+			<span>Mon Site</span>
+		</a>
+	</div>
+
+
+
+	<!-- Horloge  -->
+	<div id="horloge">
+		<div id="temps">
+			<div class="cercle" style="--clr:#F55353">
+				<div class="dots" id="hr_dot"></div>
+				<svg>
+					<circle cx="70" cy="70" r="70"></circle>
+					<circle cx="70" cy="70" r="70" id="hh"></circle>
+				</svg>
+				<div id="heures">00</div>
+			</div>
+			<div class="cercle" style="--clr:#B6FFCE">
+				<div class="dots" id="min_dot"></div>
+				<svg>
+					<circle cx="70" cy="70" r="70"></circle>
+					<circle cx="70" cy="70" r="70" id="mm"></circle>
+				</svg>
+				<div id="minutes">00</div>
+			</div>
+			<div class="cercle" style="--clr:#F6FFA4">
+				<div class="dots" id="sec_dot"></div>
+				<svg>
+					<circle cx="70" cy="70" r="70"></circle>
+					<circle cx="70" cy="70" r="70" id="ss"></circle>
+				</svg>
+				<div id="secondes">00</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--Script Heure  -->
+	<script>
+		heure();
+		
+	</script>
+</body>
+</html>

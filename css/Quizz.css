@@ -1,0 +1,82 @@
+body{
+    background-color: #1B2E3C;
+}
+.logo a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: #B6FFCE;
+    font-weight: 500;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 0.07em 0.05em #B6FFCE;
+}
+
+#logo {
+    height: 70px;
+    background-color: #1B2E3C;   
+}
+form{
+    margin: 15%;
+    margin-left: 15%;
+    color: #ffffff;
+}
+form .input{
+    color : #B6FFCE;
+}
+button{
+    text-decoration: none;
+    color :#B6FFCE;
+    font-family: MontSerrat;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: medium;
+    border: 0.5px solid #F3E3E2;
+    padding: 10px 24px ;
+    border-radius: 25px;
+    background-color: #1B2E3C;
+    transition: background-color 0.9s, color 0.4s;
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}
+
+#submit{
+    text-decoration: none;
+    color :#B6FFCE;
+    font-family: MontSerrat;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: medium;
+    border: 0.5px solid #F3E3E2;
+    padding: 10px 24px ;
+    border-radius: 25px;
+    background-color: #1B2E3C;
+    transition: background-color 0.9s, color 0.4s;
+    cursor: pointer;   
+}
+
+button:hover{
+    background-color: #B6FFCE;
+    color: #4D0011;
+}
+
+#submit:hover{
+    background-color: #B6FFCE;
+    color: #4D0011;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    
+}

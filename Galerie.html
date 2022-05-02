@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Galerie</title>
+    <link rel="stylesheet" href="css/Galerie.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <!-- Background et logo -->
+    <div class="logo">
+        <a href="Accueil.html">
+            <img src="img/Home-Logo-PNG-Clipart-Background.png" alt="Site Personnel" id="logo">
+            <span>Mon Site</span>
+        </a>
+    </div>
+    <section>
+        <ul>
+            <li class="list" data-filter="Tout">Tout</li>
+            <li class="list" data-filter="Technologies">Technologies</li>
+            <li class="list" data-filter="Animaux">Animaux</li>
+        </ul>
+        <div class="product">
+            <div class="itemBox" data-item="Technologies"><a href="img/Galerie/71nK+JjLzzL._AC_SX679_.jpg"><img src="img/Galerie/71nK+JjLzzL._AC_SX679_.jpg" alt=""></a></div>
+            <div class="itemBox" data-item="Technologies"><a href="img/Galerie/f310f4b4-xiaomi-mi-watch-une-tres-bonne-montre-connectee-sportive__1200_630__overflow_wtmk.jpeg"><img src="img/Galerie/f310f4b4-xiaomi-mi-watch-une-tres-bonne-montre-connectee-sportive__1200_630__overflow_wtmk.jpeg" alt=""></a></div>
+            <div class="itemBox" data-item="Technologies"><a href="img/Galerie/d518f1545a_50167647_oculus-quest-2.jpg"><img src="img/Galerie/d518f1545a_50167647_oculus-quest-2.jpg" alt=""></a></div>
+            <div class="itemBox" data-item="Animaux"><a href="img/Galerie/animal-animals-2880x1800-lion-wallpaper-preview.jpg"><img src="img/Galerie/dacdc238dd85b5b594c92c6fc371098c--lion-wallpaper-animal-wallpaper.jpg" alt=""></a></div>
+            <div class="itemBox" data-item="Animaux"><a href="img/Galerie/cinq-choses-que-vous-ne-saviez-pas-sur-la-girafe.jpg"><img src="img/Galerie/cinq-choses-que-vous-ne-saviez-pas-sur-la-girafe.jpg" alt=""></a></div>
+            <div class="itemBox" data-item="Animaux"><a href="img/Galerie/fiche-animale-monde-animal-girafe-1024x576.jpg.webp"><img src="img/Galerie/fiche-animale-monde-animal-girafe-1024x576.jpg.webp" alt=""></a></div>
+        </div>
+    </section>
+
+    <div id="modale" class="modal">
+        <span id="close">&times;</span>
+        <div class="modal-content">
+            <img src="" alt="">
+        </div>
+    </div>
+    <script>
+        filtre();
+    </script>
+</body>
+</html>

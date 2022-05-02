@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/Quizz.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <a href="Accueil.html"><button>Accueil</button></a>
+        </div>
+        <div>
+            <a href="Quizz.html"><button>Quizz</button></a>
+        </div>
+        <div>
+            <a href="Galerie.html"><button>Galerie</button></a>
+        </div>
+    </div> 
+    <form action="">
+        <label for="q1">
+            Quelle est la capitale du Sénégal?
+        </label> <br>
+        <input type="radio" name="q1">Paris
+        <input type="radio" name="q1">Saint-Louis
+        <input type="radio" name="q1">Luxembourg
+        <input type="radio" name="q1" id="v1">Dakar <br> <br>
+        <label for="q2">
+            Qui est le propriétaire de ce site?
+        </label> <br>
+        <input type="radio" name="q2">Astou
+        <input type="radio" name="q2" id="v2">Cedric
+        <input type="radio" name="q2">Moussa
+        <input type="radio" name="q2" > Rachid <br> <br>
+        <label for="q3">
+            En quelle année est-il(ou elle) né(e)?
+        </label> <br>
+        <input type="radio" name="q3">1999
+        <input type="radio" name="q3">1998
+        <input type="radio" name="q3" id="v3">2001
+        <input type="radio" name="q3">2000 <br> <br>
+        <label for="q4">
+            (Pour ne pas avoir zéro) Combien font 1+1?
+        </label> <br>
+        <input type="radio" name="q4">3
+        <input type="radio" name="q4">4
+        <input type="radio" name="q4" id="v4">2
+        <input type="radio" name="q4" >5 <br> <br>
+        <label for="q5">
+            L'auteur de ce site est un ...
+        </label> <br>
+        <input type="radio" name="q5">Chauffeur
+        <input type="radio" name="q5">Technicien
+        <input type="radio" name="q5" id="v5">Etudiant
+        <input type="radio" name="q5">La 2ème et la 3ème question <br> <br>
+        <label for="q6">
+            Le créateur de ce site est né à ...
+        </label> <br>
+        <input type="radio" name="q6">Bamako
+        <input type="radio" name="q6">Paris
+        <input type="radio" name="q6" id="v6">Ouagadougou
+        <input type="radio" name="q6">Pekin <br> <br>
+        <label for="q7">
+            L'ébulition de l'eau a lieu à ...
+        </label> <br>
+        <input type="radio" name="q7" id="v7">100°
+        <input type="radio" name="q7">50°
+        <input type="radio" name="q7">100K
+        <input type="radio" name="q7">100F <br> <br>
+        <label for="q8">
+            Comment ajouter une image avec le langage html?
+        </label> <br>
+        <input type="radio" name="q8">En utilisant la balise &lt;br&gt;
+        <input type="radio" name="q8" id="v8">En utilisant la balise &lt;img&gt;
+        <input type="radio" name="q8">En utilisant la balise &lt;h1&gt;
+        <input type="radio" name="q8">En utilisant la balise &lt;image&gt; <br> <br>
+        <label for="q9">
+            Le saut à la ligne avec html se fait grâce à la balise orpheline ...
+        </label> <br>
+        <input type="radio" name="q9" id="v9">&lt;br&gt; 
+        <input type="radio" name="q9">&lt;hr&gt; 
+        <input type="radio" name="q9">&lt;b&gt; 
+        <input type="radio" name="q9">&lt;a&gt; <br> <br> <br>
+        
+
+        <label for="q10">
+            Comment ajouter un lien dans une page html?
+        </label> <br>
+        <input type="radio" name="q10" id="v10">En utilisant la balise &lt;a&gt; 
+        <input type="radio" name="q10">J'utilise des doubles quotes 
+        <input type="radio" name="q10">J'utilise la balise &lt;br&gt; 
+        <input type="radio" name="q10">J'utilise la balise &lt;h1&gt; <br> <br> <br>
+
+        <input type="submit" name="submit" value="Je confirme mes réponses" onclick="resultat()" id="submit"> 
+        	<!-- Background et logo -->
+        <div class="logo">
+            <a href="Accueil.html">
+                <img src="img/Home-Logo-PNG-Clipart-Background.png" alt="Site Personnel" id="logo">
+                <span>Mon Site</span>
+            </a>
+        </div>
+        <!--Bouttons  -->
+
+     
+    </form>
+    <script>
+        function resultat(){ 
+    var score = 0;
+    if(document.getElementById('v1').checked){
+        score++;
+    }
+    if(document.getElementById('v2').checked){
+        score++;
+    }
+    if(document.getElementById('v3').checked){
+        score++;
+    }
+    if(document.getElementById('v4').checked){
+        score++;
+    }
+    if(document.getElementById('v5').checked){
+        score++;
+    }
+    if(document.getElementById('v6').checked){
+        score++;
+    }
+    if(document.getElementById('v7').checked){
+        score++;
+    }
+    if(document.getElementById('v8').checked){
+        score++;
+    }
+    if(document.getElementById('v9').checked){
+        score++;
+    }
+    if(document.getElementById('v10').checked){
+        score++;
+    }
+
+    alert("Votre score est "+score)
+    }
+    </script>
+</body>
+</html>
